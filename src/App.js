@@ -1,34 +1,34 @@
 // import React, { useEffect } from "react";
-// import DashBoard from "./pages/DashBoard/DashBoard";
+// import DashBoard from "./pages/DashBoard/DashBoard"; 1
 // import { Routes, Route } from "react-router-dom";
-// import LogInSignUp from "./pages/LogInSignUp/LogInSignUp.jsx";
+// import LogInSignUp from "./pages/LogInSignUp/LogInSignUp.jsx"; 1
 // import RequireAuth from "@auth-kit/react-router/RequireAuth";
-// import BookingTable from "./pages/BookingTable/BookingTable.jsx";
-// import EmailForPassword from "./pages/EmailForPassword/EmailForPassword.jsx";
-// import EmailForPasswordForProfessors from "./pages/EmailForPassword/EmailForPasswordForProfessors.jsx";
-// import PasswordUpdater from "./pages/PasswordUpdator/PasswordUpdater.jsx";
-// import ProfessorPasswordUpdator from "./pages/PasswordUpdator/ProfessorPasswordUpdator.jsx"
-// import PageNotFound from "./pages/PageNotFound/PageNotFound.jsx";
-// import LayOut from "./components/LayOut/LayOut.jsx";
-// import AddEquipment from "./pages/AddEquipment/AddEquipment.jsx";
-// import AddProfessors from "./pages/AddProfessors/AddProfessors.jsx";
-// import VerifyRequest from "./pages/verifyRequestPage/VerifyRequest.jsx";
-// import StudentConfirmation from "./pages/StudentConfirmation/StudentConfirmation.jsx";
-// import UserRoleUpdater from "./pages/userRoleUpdator/UserRoleUpdater.jsx";
-// import ListOfUsers from "./pages/ListOfUsersForAdmin/ListOfUsers.jsx";
+// import BookingTable from "./pages/BookingTable/BookingTable.jsx"; 1
+// import EmailForPassword from "./pages/EmailForPassword/EmailForPassword.jsx"; 1
+// import EmailForPasswordForProfessors from "./pages/EmailForPassword/EmailForPasswordForProfessors.jsx"; 1
+// import PasswordUpdater from "./pages/PasswordUpdator/PasswordUpdater.jsx"; 1
+// import ProfessorPasswordUpdator from "./pages/PasswordUpdator/ProfessorPasswordUpdator.jsx" 1
+// import PageNotFound from "./pages/PageNotFound/PageNotFound.jsx"; 1
+// import LayOut from "./components/LayOut/LayOut.jsx"; 1
+// import AddEquipment from "./pages/AddEquipment/AddEquipment.jsx"; 1
+// import AddProfessors from "./pages/AddProfessors/AddProfessors.jsx"; 1
+// import VerifyRequest from "./pages/verifyRequestPage/VerifyRequest.jsx"; 1
+// import StudentConfirmation from "./pages/StudentConfirmation/StudentConfirmation.jsx"; 1
+// import UserRoleUpdater from "./pages/userRoleUpdator/UserRoleUpdater.jsx"; 1
+// import ListOfUsers from "./pages/ListOfUsersForAdmin/ListOfUsers.jsx"; 1
 // import useAuthUser from "react-auth-kit/hooks/useAuthUser";
 // import { useNavigate } from "react-router-dom";
-// import DeleteRecords from "./pages/deleteOldRecords/DeleteRecords.jsx";
-// import ProfessorDashboard from "./pages/ProffesorsDashboard/ProfessorDashboard.jsx"
-// import EquipmentBlocking from "./pages/BlockEquipmentSlot/EquipmentBlocking.jsx";
-// import UpdateEquipStatus from "./pages/UpateEquipmentStatus/UpdateEquipStatus.jsx";
-// import ProfessorLogIn from "./pages/ProfessorLogIn/ProfessorLogIn.jsx";
-// import StudentsBookingDetail from "./pages/StudentsBookingDetailForProfessor/StudentsBookingDetail.jsx"
-// import StudentsDashBoard from "./pages/StudentDashBoard/StudentsDashBoard.jsx"
-// import OperatorDashBoard from "./pages/OperatorsDashBoard/OperatorDashBoard.jsx";
-// import OperatorUpdating from "./pages/OperatorUpdating/OperatorUpdating.jsx";
-// import About from "./pages/AboutPage/AboutPage.jsx";
-// import Information from "./pages/InformationDesk/Information.jsx";
+// import DeleteRecords from "./pages/deleteOldRecords/DeleteRecords.jsx"; 1
+// import ProfessorDashboard from "./pages/ProffesorsDashboard/ProfessorDashboard.jsx" 1
+// import EquipmentBlocking from "./pages/BlockEquipmentSlot/EquipmentBlocking.jsx"; 1
+// import UpdateEquipStatus from "./pages/UpateEquipmentStatus/UpdateEquipStatus.jsx"; 1
+// import ProfessorLogIn from "./pages/ProfessorLogIn/ProfessorLogIn.jsx"; 1
+// import StudentsBookingDetail from "./pages/StudentsBookingDetailForProfessor/StudentsBookingDetail.jsx" 1
+// import StudentsDashBoard from "./pages/StudentDashBoard/StudentsDashBoard.jsx" 1
+// import OperatorDashBoard from "./pages/OperatorsDashBoard/OperatorDashBoard.jsx"; 1
+// import OperatorUpdating from "./pages/OperatorUpdating/OperatorUpdating.jsx"; 1
+// import About from "./pages/AboutPage/AboutPage.jsx"; 1
+// import Information from "./pages/InformationDesk/Information.jsx"; 1
 // import PrivateRoute from "./components/PrivateRotue/PrivateRoute.jsx"
 // function App() {
 //   const auth = useAuthUser();
