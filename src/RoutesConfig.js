@@ -28,6 +28,7 @@ import DeleteRecords from "./pages/deleteOldRecords/DeleteRecords.jsx";
 import OperatorUpdating from "./pages/OperatorUpdating/OperatorUpdating.jsx";
 import ContactForm from "./pages/ContactForm/ContactForm.jsx"
 import StudentConfirmation from "./pages/StudentConfirmation/StudentConfirmation.jsx";
+import EmailForPassword from "./pages/EmailForPassword/EmailForPassword.jsx";
 // const RoutesConfig = () => {
 //   return (
 //     <Routes>
@@ -82,6 +83,7 @@ const RoutesConfig = () => {
       <Route path="/ProfessorEmailProvide" element={<Layout><EmailForPasswordForProfessors /></Layout>} />
       <Route path="/contactForCode" element={<Layout><ContactForm /></Layout>} />
       <Route path="/studentConfirmation/:userId"  element={<StudentConfirmation />}/>
+      <Route path="/emailProvide" element={<EmailForPassword />} />
       {/* Protected Routes - Require Authentication */}
       <Route element={<PrivateRoute />}>
         <Route path="/dashboard" element={<Layout><DashBoard /></Layout>} />
