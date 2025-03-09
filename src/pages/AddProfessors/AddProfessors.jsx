@@ -53,7 +53,7 @@ function AddProfessors() {
   
       
       // Show error toast notification
-      toast.error(error.response?.data.errors || "An unexpected error occurred please try again.");
+      toast.error(error.response?.data.errors || "email already in use  please try again");
     } finally {
       setLoading(false);
     }
@@ -100,8 +100,8 @@ function AddProfessors() {
    const getProfessorsDetail = async () => {
       try {
         const res = await axiosInstance.get(`/professors/getAllProfessors`);  
-        if (res?.data.AllProfessors.length > 0) {
-          setProfessors(res?.data.AllProfessors);
+        if (res?.data.professors.length > 0) {
+          setProfessors(res?.data?.professors);
         } else {
           setProfessors([]);
         }
@@ -109,11 +109,10 @@ function AddProfessors() {
         setProfessors([]); 
       }
     };
-
-    let toDelete = async (equipmentId) => {
+    let toDelete = async (professorId) => {
       // let token = auth.token;
       try {
-        await axiosInstance.delete(`/professors/deleteProfessorProfile/${equipmentId}`);
+        await axiosInstance.delete(`/professors/deleteProfessorProfile/${professorId}`);
         // await axiosInstance.delete(`equipments/deleteEquipmentDetails/${equipmentId}`, { 
         //   headers: {
         //     Authorization: `Bearer ${token}`,
@@ -121,7 +120,7 @@ function AddProfessors() {
         // });
         getProfessorsDetail();
       } catch (error) {
-        console.error("Error deleting answer:", error);
+        console.error("Error deleting answer:", error.message);
       }
     };
 

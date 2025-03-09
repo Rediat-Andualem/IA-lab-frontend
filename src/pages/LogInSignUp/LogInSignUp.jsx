@@ -40,7 +40,7 @@ function LogInSignUp() {
     const fetchProfessors = async () => {
       try {
         const response = await axiosInstance.get("/professors/getAllProfessors");
-        setProfessors(response?.data?.AllProfessors || []);
+        setProfessors(response?.data?.professors || []);
       } catch {
         setError("Failed to fetch professor profiles");
       }

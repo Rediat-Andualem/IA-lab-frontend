@@ -64,10 +64,12 @@ function LogInSignUp() {
     setLoading(true);
     try {
         const res = await axiosInstance.post("/professors/professorLogIn", logInData);
+        console.log(res)
         handleAuthResponse(res);
       setError("");
     } catch (err) {
-      setError(err?.response?.data?.errors?.[0] || "An error occurred");
+      console.log(err)
+      setError(err?.response?.data?.error || "An error occurred");
     } finally {
       setLoading(false);
     }

@@ -17,10 +17,10 @@ function EmailForPasswordForProfessors() {
 
     try {
       const res = await axiosInstance.post('/professors/professorPasswordRequest', email);
- 
-      setResponse(res?.data?.message[0]);
+ console.log(res)
+      setResponse(res?.data?.message);
     } catch (err) {
-      setResponse(err?.response?.data?.message[0]);
+      setResponse(err?.response?.data?.error);
     } finally {
       setIsLoading(false); 
     }
@@ -35,7 +35,7 @@ function EmailForPasswordForProfessors() {
         break;
     }
   };
-
+console.log(response)
   return (
     <Form onSubmit={sendEmail} className={styles.passForm}>
       <Form.Group className="mb-3" controlId="formBasicEmail">

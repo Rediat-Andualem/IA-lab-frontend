@@ -24,7 +24,7 @@ function ProfessorDashboard() {
     setLoading(true);
     try {
       const res = await axiosInstance.get(`/professors/getAllProfessorStudents/${professorId}`);
-      setStudents(res?.data.AllProfessorsStudents|| []);
+      setStudents(res?.data.students|| []);
     } catch (error) {
       setError("Failed to get students");
       console.error(error.message);
@@ -38,7 +38,6 @@ function ProfessorDashboard() {
   }, []);
 
   const deleteUser = async (userId) => {
-    console.log(userId)
     try {
       const response = await axiosInstance.delete(`/professors/deleteProfessorStudent/${userId}`);
       if (response?.status === 200) {
