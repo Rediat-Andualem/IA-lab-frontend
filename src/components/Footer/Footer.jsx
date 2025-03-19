@@ -7,7 +7,7 @@ export default function Footer() {
     <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className="me-5 d-none d-lg-block">
-          <span>Engineering of catalyst and reaction kinetics research lab</span>
+          <span>Developed by Engineering of catalyst and reaction kinetics research lab In collaboration with IA lab</span>
         </div>
         <div className="me-5 d-none d-lg-block">
           {/* <span>contact for code base : <a href="https://drive.google.com/drive/folders/1o2yOTF2EpqUBj0jN-N3stXyyKEjXMMMH?usp=sharing">click here</a></span> */}
@@ -15,7 +15,7 @@ export default function Footer() {
 
         </div>
         <div className="me-5 d-none d-lg-block">
-          <span>contact us : prakash.biswas@ch.iitr.ac.in</span>
+          <span>contact us : prakash.biswas@ch.iitr.ac.in , deepesh.mch@iitr.ac.in, rediat_ta@ch.iitr.ac.in</span>
         </div>
 
         <div>
