@@ -16,7 +16,7 @@ function VerifyRequest() {
       </h1>
       <h3 className="text-success text-dark ">
         You have successfully registered. However, you need confirmation from
-        your guide. Please contact your guide to confirm your registration
+        your guide. Please contact your guide / supervisor to confirm your registration
         through the email which is sent already. Once confirmed, you'll be able
         to book equipment on your next login.
       </h3>
